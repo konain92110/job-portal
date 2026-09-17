@@ -1,0 +1,299 @@
+/* ================================
+   GLOBAL
+================================ */
+
+body {
+  background: #f5f7fb;
+  color: #1f2937;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  transition: all 0.2s ease;
+}
+
+
+/* ================================
+   NAVBAR
+================================ */
+
+.navbar {
+  background: #ffffff !important;
+}
+
+.navbar-brand {
+  font-size: 1.45rem;
+  letter-spacing: -0.5px;
+}
+
+.nav-link {
+  color: #4b5563 !important;
+  margin-left: 8px;
+  border-radius: 8px;
+  padding: 8px 12px !important;
+}
+
+.nav-link:hover {
+  background: #eef4ff;
+  color: #0d6efd !important;
+}
+
+.nav-link.active {
+  color: #0d6efd !important;
+  background: #eef4ff;
+}
+
+
+/* ================================
+   HERO SECTION
+================================ */
+
+.hero {
+  background: linear-gradient(
+    135deg,
+    #eaf2ff 0%,
+    #ffffff 55%,
+    #eef7ff 100%
+  );
+
+  border: 1px solid #dce7f7;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+}
+
+.hero h1 {
+  color: #172554;
+  letter-spacing: -1px;
+}
+
+.hero p {
+  max-width: 720px;
+}
+
+.hero .badge {
+  padding: 8px 13px;
+  font-size: 0.85rem;
+}
+
+
+/* ================================
+   FILTER AREA
+================================ */
+
+.filter-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 28px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.04);
+}
+
+.filter-card label {
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 6px;
+}
+
+.form-control,
+.form-select {
+  min-height: 44px;
+  border-radius: 9px;
+  border: 1px solid #d1d5db;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #86b7fe;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.12);
+}
+
+
+/* ================================
+   JOB CARD
+================================ */
+
+.job-card {
+  border-radius: 15px !important;
+  overflow: hidden;
+  background: #ffffff;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+
+  border: 1px solid #e5e7eb !important;
+}
+
+.job-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.10) !important;
+}
+
+.job-card .card-body {
+  padding: 20px;
+}
+
+.job-card h2 {
+  color: #172554;
+  line-height: 1.35;
+}
+
+.job-card .badge {
+  font-weight: 500;
+}
+
+.job-card .btn-primary {
+  border-radius: 9px;
+}
+
+
+/* ================================
+   BUTTONS
+================================ */
+
+.btn {
+  border-radius: 9px;
+  font-weight: 500;
+}
+
+.btn-primary {
+  box-shadow: 0 4px 10px rgba(13, 110, 253, 0.15);
+}
+
+.btn-primary:hover {
+  transform: translateY(-1px);
+}
+
+
+/* ================================
+   JOB DETAILS
+================================ */
+
+.job-details-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.05);
+}
+
+.job-details-card h1 {
+  color: #172554;
+}
+
+.job-details-card h2,
+.job-details-card h3 {
+  color: #1e3a8a;
+}
+
+.job-description {
+  line-height: 1.8;
+}
+
+
+/* ================================
+   SAVED JOBS
+================================ */
+
+.alert {
+  border-radius: 12px;
+}
+
+.alert-info {
+  border: 1px solid #b6d4fe;
+}
+
+
+/* ================================
+   PAGINATION
+================================ */
+
+.pagination {
+  gap: 4px;
+}
+
+.page-link {
+  border-radius: 8px !important;
+  margin: 0 2px;
+}
+
+.page-item.active .page-link {
+  box-shadow: 0 3px 8px rgba(13, 110, 253, 0.2);
+}
+
+
+/* ================================
+   LOADING
+================================ */
+
+.spinner-border {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+
+/* ================================
+   FOOTER
+================================ */
+
+footer {
+  background: #ffffff;
+  color: #6b7280;
+  margin-top: 50px;
+}
+
+
+/* ================================
+   EUROPE COUNTRY BUTTONS
+================================ */
+
+.hero .btn-outline-primary {
+  border-radius: 20px;
+  padding: 6px 14px;
+  background: #ffffff;
+}
+
+.hero .btn-outline-primary:hover {
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 25px !important;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .job-card .card-body {
+    padding: 17px;
+  }
+
+  .navbar-brand {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero h1 {
+    font-size: 1.7rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .pagination {
+    flex-wrap: wrap;
+  }
+}
